@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>BOOKWORM - Contact Us</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class='nav-left'>
+                <h1>BOOKWORM</h1>
+            </div>
+            <ul class='nav-right'>
+                <li><a href="index.html">Books</a></li>
+                <li><a class="active" href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="center-text">Contact Us</h1>
+
+        <!-- Contact Form -->
+        <form action="submit_form.php" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Your full name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="Your email address">
+            </div>
+
+            <div class="form-group">
+                <label for="reason">Reason for Contacting:</label>
+                <select id="reason" name="reason" required>
+                    <option value="general-inquiry">General Inquiry</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="technical-support">Technical Support</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required placeholder="Write your message here"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+        </form>
+    </main>
+
+</body>
+</html>

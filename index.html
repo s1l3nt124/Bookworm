@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>BOOKWORM - Books</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="nav-left">
+                <h1>BOOKWORM</h1>
+            </div>
+            <ul class="nav-right">
+                <li><a class="active" href="index.html">Books</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 class="center-text">Welcome to My BookWorm</h1>
+    <p class="center-text">Bookworm is your destination for children's books! We bring classic tales, new adventures, and fun stories that kids will love. Start reading and enjoy the world of imagination!</p>
+    <p class="colored-text">Explore amazing kids books here!</p>
+
+    <!-- Book Item - Little Red Riding Hood -->
+    <div class="book-item">
+        <img src="red hood.jpg" alt="Little Red Riding Hood">
+        <div class="book-description">
+            <h3>Little Red Riding Hood</h3>
+            <p>A girl meets a cunning wolf while visiting her grandmother. 
+            <button class="see-more-btn" data-book="red-hood">Read More...</button></p>
+        </div>
+    </div>
+
+    <!-- Book Item - Cinderella -->
+    <div class="book-item">
+        <img src="cinderella.jpg" alt="Cinderella">
+        <div class="book-description">
+            <h3>Cinderella</h3>
+            <p>A kind girl overcomes challenges with the help of a fairy godmother. 
+            <button class="see-more-btn" data-book="cinderella">Read More...</button></p>
+        </div>
+    </div>
+
+    <!-- Book Item - Goldilocks and the Three Bears -->
+    <div class="book-item">
+        <img src="goldilocks.jpeg" alt="Goldilocks and the Three Bears">
+        <div class="book-description">
+            <h3>Goldilocks and the Three Bears</h3>
+            <p>A curious girl enters the house of three bears and discovers what’s "just right." 
+            <button class="see-more-btn" data-book="goldilocks">Read More...</button></p>
+        </div>
+    </div>
+
+    <!-- Book Item - Hansel and Gretel -->
+    <div class="book-item">
+        <img src="hansel and gretel.jpg" alt="Hansel & Gretel">
+        <div class="book-description">
+            <h3>Hansel and Gretel</h3>
+            <p>Siblings outwit a witch after being abandoned in the forest. 
+            <button class="see-more-btn" data-book="hansel-gretel">Read More...</button></p>
+        </div>
+    </div>
+
+    <!-- Modal Boxes for Full Story -->
+    <div id="red-hood-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Full Story of Little Red Riding Hood</h2>
+            <p id="story-red-hood">Little Red Riding Hood was a sweet girl who loved to visit her grandmother. One day, she was going through the forest to visit her grandmother’s house. Along the way, she met a wolf. The wolf tricked her into telling him where her grandmother lived. The wolf went to the grandmother’s house first and pretended to be her. When Little Red Riding Hood arrived, she noticed something was wrong. With the help of a woodcutter, they saved her grandmother, and the wolf was never seen again.</p>
+            <p><strong>Accessibility:</strong> Adjustable text sizes; text-to-speech for book summaries.</p>
+    
+            <!-- Accessibility Controls -->
+            <div class="accessibility-controls">
+                <button class="increase-font" data-book="red-hood">Increase Font</button>
+                <button class="decrease-font" data-book="red-hood">Decrease Font</button>
+                <button class="read-text" data-book="red-hood">Read Story</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="cinderella-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Full Story of Cinderella</h2>
+            <p id="story-cinderella">Cinderella was a kind girl who lived with her evil stepmother and stepsisters. They made her do all the work and treated her very badly. One day, an invitation arrived for a royal ball. Cinderella wanted to go, but her stepmother stopped her. Her fairy godmother appeared and helped her. She turned a pumpkin into a carriage and gave Cinderella a beautiful dress and glass slippers. At the ball, Cinderella met the prince, and they danced together. But when the clock struck midnight, she had to run away, leaving one of her glass slippers behind. The prince found her using the slipper, and they lived happily ever after.</p>
+            <p><strong>Accessibility:</strong> Adjustable text sizes; text-to-speech for book summaries.</p>
+    
+            <!-- Accessibility Controls -->
+            <div class="accessibility-controls">
+                <button class="increase-font" data-book="cinderella">Increase Font</button>
+                <button class="decrease-font" data-book="cinderella">Decrease Font</button>
+                <button class="read-text" data-book="cinderella">Read Story</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="goldilocks-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Full Story of Goldilocks and the Three Bears</h2>
+            <p id="story-goldilocks">Goldilocks was a curious little girl who went for a walk in the forest. She found a house where three bears lived. When no one was home, she went inside. First, she tried their porridge. One was too hot, one was too cold, and one was just right, so she ate it all up. Then, she sat in their chairs. One was too big, one was too small, and one was just right, but she broke it. Finally, she tried their beds. One was too hard, one was too soft, and one was just right, so she fell asleep. When the bears came back, they were surprised to find Goldilocks, and she quickly ran away, learning a lesson to be more careful.</p>
+            <p><strong>Accessibility:</strong> Adjustable text sizes; text-to-speech for book summaries.</p>
+    
+            <!-- Accessibility Controls -->
+            <div class="accessibility-controls">
+                <button class="increase-font" data-book="goldilocks">Increase Font</button>
+                <button class="decrease-font" data-book="goldilocks">Decrease Font</button>
+                <button class="read-text" data-book="goldilocks">Read Story</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="hansel-gretel-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Full Story of Hansel and Gretel</h2>
+            <p id="story-hansel-gretel">Hansel and Gretel were a brother and sister who lived in the forest with their parents. One day, their parents took them deep into the forest and left them there. Hansel and Gretel were lost, but they found a house made of candy. Inside, there was an old witch who wanted to eat them. She trapped them in a cage, but Hansel and Gretel were clever. They tricked the witch into going into the oven and escaped. They found their way home and lived happily ever after with their father.</p>
+            <p><strong>Accessibility:</strong> Adjustable text sizes; text-to-speech for book summaries.</p>
+    
+            <!-- Accessibility Controls -->
+            <div class="accessibility-controls">
+                <button class="increase-font" data-book="hansel-gretel">Increase Font</button>
+                <button class="decrease-font" data-book="hansel-gretel">Decrease Font</button>
+                <button class="read-text" data-book="hansel-gretel">Read Story</button>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
